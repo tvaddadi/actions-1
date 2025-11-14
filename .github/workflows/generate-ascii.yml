@@ -8,6 +8,9 @@ jobs:
         - name: Checkout Action
           uses: actions/checkout@v5
         
+        - name: List the files
+          run: ls -ltr
+
         - name: Execute Shell Script
           run: |
             chmod +x ascii-script.sh
