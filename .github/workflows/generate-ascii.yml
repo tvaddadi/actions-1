@@ -6,7 +6,7 @@ jobs:
         steps:
 
         - name: Checkout Action
-          run: actions/checkout@v5
+          uses: actions/checkout@v5
         
         - name: Install cowsay package
           run: sudo apt-get install cowsay -y
