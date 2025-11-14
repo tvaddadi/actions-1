@@ -9,7 +9,7 @@ jobs:
         - name: list and read file
           run: |
             echo "My first Github Actions Job"
-            ls ltr
+            ls ltra
             cat README.md
         - name: Cowsay art work 
           run: cowsay -f dragon "Run for cover, I am dragon Mwww !" >> dragon.txt
