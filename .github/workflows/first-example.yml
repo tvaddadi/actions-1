@@ -6,11 +6,15 @@ jobs:
         steps:
         - name: Checkout Action 
           uses: actions/checkout@v5
-        - name: welcome message
-          run: echo "My first Github Actions Job"
-        
-        - name: List files
-          run: ls
+        - name: list and read file
+          run: |
+            echo "My first Github Actions Job"
+            ls ltr
+            cat README.md
+        - name: Cowsay art work 
+          run: cowsay -f dragon "Run for cover, I am dragon Mwww !" >> dragon.txt
+        # - name: List files
+        #   run: ls
 
-        - name: Read file
-          run: cat README.md
+        # - name: Read file
+        #   run: cat README.md
